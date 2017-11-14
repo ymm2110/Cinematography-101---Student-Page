@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+body {
+    font: 400 20px Chewy, sans-serif;
+    line-height: 1.8;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.navbar {
+    font-family: Chewy, sans-serif;
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    font-family: Montserrat, sans-serif;
+    color: #000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+button {
+   margin: 10px 10px 10px 10px;
+}
+
+.container-fluid {
+    padding-top: 60px;
+}
+
+.imgTitle {
+    height: 400px;
+}
+
+.imgInText {
+    width: 100%;
+    height: auto;
+    padding: 40px 60px;
+}
+
+.imgQuiz{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.banner { 
+    background-color: #fff; 
+    color: #000;
+}
+
+.chapter {
+    border-style: solid;
+    border-color: #000;
+    border-radius: 0;
+    padding: 40px 60px;
+}
+
+.content {
+    border-radius: 0;    
+}
+
+.quiz{
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-radius: 0;
+    text-align: center;
+    align-content: center;
+}
+
+.test{
+    text-align: center;
+    align-content: center;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 0;
+    padding: 40px 60px;
+}
+
+.contact{
+    text-align: center;
+    align-content: center;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

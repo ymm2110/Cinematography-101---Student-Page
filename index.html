@@ -1,0 +1,255 @@
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!--Nav Bar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="cinematographyStudent">Cinematography 101</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#exposure">Exposure</a></li>
+          <li><a href="#aperture">Aperture</a></li>
+          <li><a href="#iso">ISO</a></li>
+          <li><a href="#shutterSpeed">Shutter Speed</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Banner -->
+  <div class="banner">
+    <div class="container-fluid text-center">
+      <img src="https://talentbloggers.com/wp-content/uploads/2016/05/Cinematography2.jpg" class="imgTitle" alt="cinematographer">
+      <h1>Cinematography 101</h1>
+      <h2>The Bare Bones Camera Course For Film and Video</h2>
+      <h4>Schroeppel, Tom. The Bare Bones Camera Course for Film and Video. Allworth Press, 2015. </h4>
+    </div>
+  </div>
+
+  <!--Chapter 1 Exposure -->
+  <div id="exposure" class="container-fluid">
+    <div class="row">
+      <div class="col-10 offset-1 slideanim">
+        <h2 class="chapter">Chapter 1 - Exposure</h2>
+      </div>
+    </div>
+
+    <!--What's Aperture -->
+    <div class="row">
+      <div class="content col-8 offset-2">
+        <p> Exposure is the amount of light that comes through the lens and hits the film or CCD chip. The hole in the center of the lens that the light travels through is called the aperture.</p>
+        <h3 id="aperture">Aperture</h3>
+        <p>If the aperture is big, it lets in lots of light. If it’s small, it lets in very little light. The size of the aperture is adjusted by the f/stop ring on the outside of the lens. An f/stop is simply a measure of how big or how little the aperture
+          is.
+        </p>
+        <p>I find that the easiest way to understand f/stops is to think of them in terms of fractions, because that’s what they really are. F/2 means that the aperture is 1/2 as big across as the lens is long. F/16 means that the aperture is l/16th as big
+          across as the lens is long.</p>
+        <img src="http://yuntongman.com/wp-content/uploads/2017/11/aperture.png" class="imgInText" alt="aperture">
+        <p>F/stops are constructed so that as you go from f/1 to f/22 and beyond, each stop admits 1/2 as much light as the one before. The progression is: f/1, f/1.4, f/2, f/2,8, f/4, f/5.6, f/8, f/11, f/16, f/22, f/32, f/45, f/64, and so on. F/1.4 admits
+          half as much light as f/1. F/4 admits half as much light as f/2.8.</p>
+        <img src="http://yuntongman.com/wp-content/uploads/2017/11/fstop.png" class="imgInText" alt="f-stop">
+      </div>
+    </div>
+
+    <!--Aperture Quiz -->
+    <div class="row">
+      <div class="col-6 offset-3 slideanim quiz">
+        <h3>Can you tell?...</h3>
+        <div>
+          <p class="quiz1">1. In a very dark room, you'll probably be shotting at</p>
+          <input class="answer" type="radio" name="q1" value="1">
+          <label id="correctString1">f/2</label>
+          <br>
+          <input class="answer" type="radio" name="q1" value="0">
+          <label>f/11</label>
+          <br>
+        </div>
+
+        <div>
+          <p class="quiz1">2. Outside in bright sunlight, where you've got a lot of light, you'll probably be shotting at</p>
+          <input class="answer" type="radio" name="q2" value="0">
+          <label>f/2r</label>
+          <br>
+          <input class="answer" type="radio" name="q2" value="1">
+          <label id="correctString2">f/11</label>
+          <br>
+
+          <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz1()" type="submit" value="Submit" />
+          </div>
+
+          <!--show only wrong answers on submit-->
+          <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+
+          <!--show score upon submit-->
+          <div>
+            <h2 class="userScore" id="userScore"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--ISO -->
+    <div class="row">
+      <div class="content col-8 offset-2">
+        <h3 id="iso">ISO</h3>
+        <p>ISO stands for International Standards Organization. The ISO number indicates the speed or sensitivity of the film. The lower the number, the less sensitive, the “slower” the film is, and the more light you need to get a usable picture. The higher
+          the number, the more sensitive, the “faster” the film is, and the less light you need to get a usable picture.</p>
+        <p>Film speed may also be indicated as ASA, for American Standards Association, or EI, for Exposure Index. For all practical purposes, ASA and EI numbers are equivalent to ISO numbers.</p>
+        <P>ISO numbers progress geometrically in terms of sensitivity. Each time you double the ISO number, you halve the amount of light needed to get a usable image.</P>
+        <img src="http://yuntongman.com/wp-content/uploads/2017/11/iso.png" class="imgInText" alt="ISO">
+        <p>Slower, low ISO films generally produce a higher quality picture. Faster, higher ISO films, while requiring much less light, generally produce grainier, lower quality images.</p>
+      </div>
+    </div>
+    <!--ISO Quiz -->
+    <div class="row">
+      <div class="col-6 offset-3 slideanim quiz">
+        <h4>Can you tell?...</h4>
+        <div>
+          <p class="quiz2">1. Which of the following two photos used a higher ISO?</p>
+          <img class="imgQuiz" src="http://yuntongman.com/wp-content/uploads/2017/11/canon102400.jpg" alt="high ISO photo">
+          <input class="answer correct" type="radio" name="quizTwo1" value="1">
+          <label id="quiz2CorrectString1">Photo 1</label>
+          <br>
+          <img class="imgQuiz" src="http://yuntongman.com/wp-content/uploads/2017/11/canon800.jpg" alt="low ISO photo">
+          <input class="answer" type="radio" name="quizTwo1" value="0">
+          <label>Photo 2</label>
+          <br>
+        </div>
+
+        <div>
+          <p class="quiz2">2. You may want to trun up the ISO when:</p>
+          <input class="answer correct" type="checkbox" name="quizTwo2" value="1">
+          <label id="quiz2CorrectString2">In a dark theatre taking photos for an audience.</label>
+          <br>
+          <input class="answer" type="checkbox" name="quizTwo2" value="0">
+          <label>Riverside Park in a Sunny Day taking photo for a sleeping baby.</label>
+          <br>
+          <input class="answer correct" type="checkbox" name="quizTwo3" value="1">
+          <label id="quiz2CorrectString3">Bon-fire Night at an abandoned castle taking photo for your friend.</label>
+          <br>
+          <input class="answer correct" type="checkbox" name="quizTwo4" value="1">
+          <label id="quiz2CorrectString4">In a night club taking photo for a bartender.</label>
+          <br>
+          <input class="answer" type="checkbox" name="quizTwo4" value="0">
+          <label>In a bright contemporary art gallery taking photo for the artist.</label>
+          <br>
+          <input class="answer" type="checkbox" name="quizTwo4" value="0">
+          <label>In a theatre taking photos for a performer.</label>
+          <br>
+
+
+          <div class="submitter">
+            <input class="quizTwoSubmit" id="submitTwoButton" onClick="submitQuizTwo()" type="submit" value="Submit" />
+          </div>
+
+          <!--show only wrong answers on submit-->
+          <div class="quizAnswers" id="quizTwoCorrectAnswer1"></div>
+          <div class="quizAnswers" id="quizTwoCorrectAnswer2"></div>
+          <div class="quizAnswers" id="quizTwoCorrectAnswer3"></div>
+          <div class="quizAnswers" id="quizTwoCorrectAnswer4"></div>
+          <!--show score upon submit-->
+          <div>
+            <h2 class="quizScore" id="quizTwoScore"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Chapter Test -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 offset-1 slideanim test">
+          <h3>Chapter Test</h3>
+          <div>
+            <p class="test1">1. When you find the room extramly bright and you have to get a properly exposured photo, your best shot is:</p>
+            <input class="answer" type="radio" name="t1" value="0">
+            <label>Use a bigger f-stop and higher ISO</label>
+            <br>
+            <input class="answer" type="radio" name="t1" value="0">
+            <label>Use a smaller f-stop and higher ISO</label>
+            <br>
+            <input class="answer" type="radio" name="t1" value="0">
+            <label>Use a bigger f-stop and lower ISO</label>
+            <br>
+            <input class="answer" type="radio" name="t1" value="1">
+            <label id="testCorrectString1">Use a smaller f-stop and lower ISO</label>
+            <br>
+          </div>
+
+          <div>
+            <p class="test1">2. when you want the iamge to have as less noise as possible, you should</p>
+            <input class="answer" type="radio" name="t2" value="1">
+            <label id="testCorrectString2">set the ISO first then find a proper f-stop</label>
+            <br>
+            <input class="answer" type="radio" name="t2" value="0">
+            <label>set the f-stop first then find a proper ISO</label>
+            <br>
+
+            <div class="submitter">
+              <input class="testSubmit" id="testSubmitButton" onClick="submitTest1()" type="submit" value="Submit" />
+            </div>
+
+            <!--show only wrong answers on submit-->
+            <div class="quizAnswers" id="testCorrectAnswer1"></div>
+            <div class="quizAnswers" id="testCorrectAnswer2"></div>
+
+            <!--show score upon submit-->
+            <div>
+              <h2 class="userScore" id="testUserScore"></h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact container-fluid" id="contact">
+      <div class="row">
+        <div class="col-12 slideanim">
+          <h2 class="text-center">CONTACT THE INSTRUCTOR?</h2>
+          <p>Please contact the instructor if you have any questions.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5 offset-1 slideanim form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-5 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 offset-1 slideanim form-group">
+          <textarea class="form-control" id="questions" name="questions" placeholder="Questions" rows="5"></textarea>
+          <div class="row">
+            <div class="col-2 offset-10 form-group">
+              <button id="send">send</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 offset-1" id="results">Review of the question will appear here after you click "send"</div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center slideanim">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <p>Back to top</p>
+      </a>
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <p>Go to Teachers Version</p>
+      </a>
+    </footer>
+
+</body>
